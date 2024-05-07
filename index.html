@@ -14,13 +14,11 @@
     <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
     <!--using FontAwesome--------------->
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>   
-
+    
 </head>
 <body>
     <!-- NAVBAR -->
    <nav> 
-           <!--social-links-and-phone-number----------------->
-
 
     <!--menu-bar----------------------------------------->
     <div class="navigation">
@@ -30,13 +28,13 @@
         <div class="toggle"></div>
         <!--menu----------------->
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li  class="shop"><a href="#" >Brand</a></li>
+            <li><a href="#slider">Home</a></li>
+            <li  class="shop"><a href="#brand" >Brand</a></li>
 
-            <li><a href="#">New Arrival</a>
+            <li><a href="#new-arrival">New Arrival</a>
                 <!--lable---->
             </li>
-            <li><a href="subscribe">Subscribe</a></li>
+            <li><a href="#footer">Subscribe</a></li>
         </ul>
         <!--right-menu----------->
         <div class="right-menu">
@@ -76,10 +74,9 @@
              </a>
 
             <strong>Log In</strong>
-            <form action="">
+            <form action="" name="loginForm" onsubmit="return validateLoginForm()">
                 <input type="email" placeholder="example@gmail.com" name="email" required>
                 <input type="password" placeholder="password" name="password" required>
-
                 <input type="submit" value="Log In">
             </form>
 
@@ -98,13 +95,13 @@
 
 
            <strong>Sign Up</strong>
-           <form action="">
-            <input type="text" placeholder="Full Name" name="email" required>
+           <form action="" name="registrationForm" onsubmit="return validateRegistrationForm()">
+            <input type="text" placeholder="Full Name" name="fullName" required>
             <input type="email" placeholder="example@gmail.com" name="email" required>
             <input type="password" placeholder="password" name="password" required>
-
-               <input type="submit" value="Sign Up">
-           </form>
+            <input type="submit" value="Sign Up">
+        </form>
+        
 
            <div class="form-btns">
            <a href="javascript:void(0)" class="already-account"> Already Have Account?</a>
@@ -112,9 +109,8 @@
        </div>
 
 
+<section id="slider">
     </div>
-
-
     <ul id="adaptive" class="cs-hidden">
         <li class="item-a">    
             <div class="full-slider-box f-slide-1">
@@ -151,8 +147,10 @@
         </div>
     </div>
 </ul>
+</section>
 
 
+<section class="brand" id="brand">
 <div class="feature-heading">
     <h2>Brand</h2>
 </div>
@@ -220,8 +218,10 @@
 
   </ul>
 
+</section>
 
-<section class="new-arrival">
+
+<section class="new-arrival" id="new-arrival">
     <div class="arrival-heading">
         <strong>New Arrival</strong>
         <p>We Provide You New Shoes Product</p>
@@ -234,7 +234,7 @@
  
         <div class="product-img">
             <!--Add Cart-->
-            <a href="#" class="add-cart">
+            <a href="detail/index.html" class="add-cart">
             <i class="fas fa-shopping-cart"></i>
                     </a> 
             <img src="images/jordanlow.png" alt="">
@@ -243,8 +243,8 @@
 
 
         <div class="products-details">
-            <a href="#" class="p-name">Air Jordan 1 low grey</a><br>
-            <span class="p-price">$22.00</span>
+            <a href="detail/index.html" class="p-name">Air Jordan 1 low grey</a><br>
+            <span class="p-price">$77.88</span>
         </div>
         </div>
 
@@ -252,7 +252,7 @@
  
             <div class="product-img">
                 <!--Add Cart-->
-                <a href="#" class="add-cart">
+                <a href="detailnb/index.html" class="add-cart">
                 <i class="fas fa-shopping-cart"></i>
                         </a> 
                 <img src="images/nb530.png" alt="">
@@ -261,8 +261,8 @@
     
     
             <div class="products-details">
-                <a href="#" class="p-name">New Balance 530 Ivory</a><br>
-                <span class="p-price">$22.00</span>
+                <a href="detailnb/index.html" class="p-name">New Balance 530 Ivory</a><br>
+                <span class="p-price">$77.88</span>
             </div>
             </div>
 
@@ -270,7 +270,7 @@
  
                 <div class="product-img">
                     <!--Add Cart-->
-                    <a href="#" class="add-cart">
+                    <a href="detail/index.html" class="add-cart">
                     <i class="fas fa-shopping-cart"></i>
                             </a> 
                     <img src="images/jordan4.png" alt="">
@@ -279,8 +279,8 @@
         
         
                 <div class="products-details">
-                    <a href="#" class="p-name">Air Jordan 4 Retro Military Blue</a><br>
-                    <span class="p-price">$22.00</span>
+                    <a href="detail/index.html" class="p-name">Air Jordan 4 Retro Military Blue</a><br>
+                    <span class="p-price">$200.00</span>
                 </div>
                 </div>
 
@@ -288,7 +288,7 @@
  
                     <div class="product-img">
                         <!--Add Cart-->
-                        <a href="#" class="add-cart">
+                        <a href="detailadidas/index.html" class="add-cart">
                         <i class="fas fa-shopping-cart"></i>
                                 </a> 
                         <img src="images/sambacream.png" alt="">
@@ -306,7 +306,7 @@
  
                         <div class="product-img">
                             <!--Add Cart-->
-                            <a href="#" class="add-cart">
+                            <a href="detailsalomon/index.html" class="add-cart">
                             <i class="fas fa-shopping-cart"></i>
                                     </a> 
                             <img src="images/salomonblack.png" alt="">
@@ -315,7 +315,7 @@
                 
                 
                         <div class="products-details">
-                            <a href="#" class="p-name">Salomon XT-6 Black Phantom</a><br>
+                            <a href="detailsalomon/index.html" class="p-name">Salomon XT-6 Black Phantom</a><br>
                             <span class="p-price">$22.00</span>
                         </div>
                         </div>
@@ -324,7 +324,7 @@
  
                             <div class="product-img">
                                 <!--Add Cart-->
-                                <a href="#" class="add-cart">
+                                <a href="detailconverse/index.html" class="add-cart">
                                 <i class="fas fa-shopping-cart"></i>
                                         </a> 
                                 <img src="images/comverse.png" alt="">
@@ -333,7 +333,7 @@
                     
                     
                             <div class="products-details">
-                                <a href="#" class="p-name">Converse Chuck Taylor</a><br>
+                                <a href="detailconverse/index.html" class="p-name">Converse Chuck Taylor</a><br>
                                 <span class="p-price">$22.00</span>
                             </div>
                             </div>
@@ -342,7 +342,7 @@
  
                                 <div class="product-img">
                                     <!--Add Cart-->
-                                    <a href="#" class="add-cart">
+                                    <a href="detailpuma/index.html" class="add-cart">
                                     <i class="fas fa-shopping-cart"></i>
                                             </a> 
                                     <img src="images/puma.png" alt="">
@@ -351,7 +351,7 @@
                         
                         
                                 <div class="products-details">
-                                    <a href="#" class="p-name">Puma x Ripndip Slipstream</a>
+                                    <a href="detailpuma/index.html" class="p-name">Puma x Ripndip Slipstream</a>
                                     <span class="p-price">$22.00</span>
                                 </div>
                                 </div>
@@ -360,7 +360,7 @@
  
                                     <div class="product-img">
                                         <!--Add Cart-->
-                                        <a href="#" class="add-cart">
+                                        <a href="detailpuma/index.html" class="add-cart">
                                         <i class="fas fa-shopping-cart"></i>
                                                 </a> 
                                         <img src="images/puma2.jpeg" alt="">
@@ -369,7 +369,7 @@
                             
                             
                                     <div class="products-details">
-                                        <a href="#" class="p-name">Puma RS-X Hard Drive</a>
+                                        <a href="detailpuma/index.html" class="p-name">Puma RS-X Hard Drive</a>
                                         <span class="p-price">$22.00</span>
                                     </div>
                                     </div>
@@ -378,7 +378,7 @@
 </section>
 
 <!--SALE-->
-<section class="sale">
+<section class="sale">  
     <!--SALE BOX-->
     <div class="sale-box">
         <img src="images/top.jpg" alt="">
@@ -432,11 +432,11 @@
         <i class="fas fa-sync"></i>
         <span>100% Money Back</span>
         <p>You Have 30 days to Return</p>
-    </div>
+    </div> 
 </section>
 
 <!--FOOTER-->
-<footer>
+<footer id="footer">
     <span class="copyright">
         Copyright 2024 - Gema Rajif
     </span>
@@ -519,6 +519,120 @@ $(document).ready(function(){
         $('.menu').toggleClass('active');
     });
 });
+
+$(document).ready(function(){
+    // Smooth scroll to section
+    $('.menu a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+
+    // Add smooth scrolling to all links inside the navigation menu
+    $('.navigation a').on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        } 
+    });
+});
+
+// VALIDASII
+
+    // Fungsi untuk memeriksa validitas email
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+
+    // Fungsi untuk menampilkan pesan kesalahan atau keberhasilan
+    function showAlert(message, isSuccess) {
+        if (isSuccess) {
+            alert(message);
+        } else {
+            alert("Error: " + message);
+        }
+    }
+
+    // Fungsi untuk melakukan validasi saat form login disubmit
+    function validateLoginForm() {
+        var email = document.forms["loginForm"]["email"].value;
+        var password = document.forms["loginForm"]["password"].value;
+
+        // Validasi email
+        if (!validateEmail(email)) {
+            showAlert("Invalid email format", false);
+            return false;
+        }
+
+        // Validasi password
+        if (password.length < 6) {
+            showAlert("Password must be at least 6 characters long", false);
+            return false;
+        }
+
+        // Jika semua validasi berhasil, tampilkan pesan keberhasilan
+        showAlert("Login successful", true);
+        return true;
+    }       
+
+
+    // VALIDASI SIGN UP
+    // Fungsi untuk menampilkan alert
+    function showAlert(message, isSuccess) {
+        if (isSuccess) {
+            alert(message);
+        } else {
+            alert("Error: " + message);
+        }
+    }
+
+    // Fungsi untuk melakukan validasi email
+    function validateEmail(email) {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    // Fungsi untuk melakukan validasi saat form registrasi disubmit
+    function validateRegistrationForm() {
+        var fullName = document.forms["registrationForm"]["fullName"].value;
+        var email = document.forms["registrationForm"]["email"].value;
+        var password = document.forms["registrationForm"]["password"].value;
+
+        // Validasi nama lengkap
+        if (!/^[a-zA-Z ]+$/.test(fullName.trim())) {
+            showAlert("Full name must contain only letters and spaces", false);
+            return false;
+        }
+
+        // Validasi email
+        if (!validateEmail(email)) {
+            showAlert("Invalid email format", false);
+            return false;
+        } else if (!email.endsWith('@gmail.com')) {
+            showAlert("Email must be a Gmail address", false);
+            return false;
+        }
+
+        // Validasi password
+        if (password.length < 6) {
+            showAlert("Password must be at least 6 characters long", false);
+            return false;
+        }
+
+        // Jika semua validasi berhasil, tampilkan pesan keberhasilan
+        showAlert("Registration successful", true);
+        return true;
+    }
     </script>
 
 
