@@ -20,3 +20,14 @@ previewBox.forEach(close =>{
     preveiwContainer.style.display = 'none';
   };
 });
+
+const cartButtons = document.querySelectorAll('.cart');
+
+cartButtons.forEach(button => {
+  button.addEventListener('click', handleClick);
+});
+
+function handleClick(event) {
+  event.preventDefault(); // Prevent default form submission if button is inside a form
+  alert("Succesfully added to cart!");
+}
